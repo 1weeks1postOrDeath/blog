@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 사용방법
 
-## Getting Started
+아래의 형태를 맞춰 `posts` 폴더에 글을 작성해주시면 됩니다.
+`pre-posts`는 작성중인 글의 저장용도로 임의로 지정해놓았습니다.
 
-First, run the development server:
+```markdown
+---
+title: '제목 작성'
+date: 'March 12, 2021'
+excerpt: '미리보기 글 작성'
+cover_image: '/images/posts/test.png'
+---
 
-```bash
-npm run dev
-# or
-yarn dev
+Lorem [markdownum](http://insunt.org/inpositaque), et sanguine rutilos dixit
+nigro cornu genus duris linguae. Super hic deus ego adveniens nullumque Venerem
+equis aurem aliisque celare densis dextramque similis **post**: mihi rexerat;
+bis.
+
+1. Scinditur annos
+2. Talia verba
+3. Habet delata villis domui
+4. Geminum viscere deum et utque
+
+## Magnorum nulla avertit pedem neque monimenta terram
+
+Quo numquam, nunc [concussaque](http://mox-cunctos.net/), hora effugit mihi,
+pectore. Hinc fausto, circumspicit cadas; virilibus rapui, timidum rorat cuique
+animorum ac! Quem sit. Venit qui, rex sibi tota, peto _fortis ira suis_ dolusque
+simulatque [incipit crudelesque
+pavens](http://www.corpora.com/terrae-oscula.html) spatiosa conlegit oscula
+equam.
+
+## Mensis idem
+
+Caelestia Ganymedes gentis. Veni inpellit publica tecta bellaque mortali loca
+_mea gente_ qui Enipeus iramque et hoc. _Altera Rex vetitum_; hoc magis dolores
+precor nec. Ubi verba, et aras regia, cognoscere vites tempusque expers, heros?
+
+## Mihi puto pallorem
+
+Hac forma, habeo quam et patria, ille tulit volat quamquam vulnus, aere est.
+Ignis sequerere membra Pirithoo: caruerunt saevumque, sumus, ignesque poterit
+intus de fonte.
+
+## Quondam montibus tua spes consilioque nata consilioque
+
+Abigitque limite. Ipsa levis extulit munera, litora, ira pavet in morte, **te
+in** quas [vix](http://auxiliumquefando.net/vocibus-cum). Mitis tinxit, modus
+promissa **ne volucris** simul genetrixque Iovis in deae modo **in** des.
+_Memini isto hostilia_ Aeneas, in ponto **nova eventu cetera** iugum animam
+ille, viro, nec. Loquendi aves insisto saecula premente nec, at ego poscit ubi
+sub!
+
+- Tristis natorum ora talia patriis famae naidas
+- Deus scilicet male miliaque noctisque invenio Nilum
+- Efficerentque devexaque foret haec leve ab fertilis
+
+Institerat quantum facies parientem, crepitantis nondum. Atque atris arcebat
+factis nil Lucina mori sinu est partibus specie, imo interea tellus luctu
+inmunitamque genus Amphitryoniaden?
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 주의사항
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+아래형태는 꼭 맞춰주셔야 정상적으로 렌더링이 됩니다.
+사진의 경우 외부링크 또는 `/public/images/posts` 내부에 넣어주셔도 됩니다
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```md
+---
+title: '제목 작성'
+date: 'March 12, 2021'
+excerpt: '미리보기 글 작성'
+cover_image: '/images/posts/test.png'
+---
+```
