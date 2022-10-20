@@ -1,3 +1,7 @@
+# 링크
+
+- [oneweeks-onepost-or-death](https://oneweeks-onepost-or-death.vercel.app/)
+
 # 사용방법
 
 1. 본인 이름의 브랜치를 dev 브랜치 기점으로 따서 글을 작성해주시면 됩니다.
