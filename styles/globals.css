@@ -131,3 +131,7 @@ ol {
     grid-template-columns: 1fr;
   }
 }
+
+code {
+  overflow: scroll-y;
+}
