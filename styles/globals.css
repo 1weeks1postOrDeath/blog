@@ -89,6 +89,13 @@ header a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.card-image {
+  display: flex;
+  align-items: center;
+  min-height: 320px;
+  height: auto;
+}
+
 .card-page {
   padding: 15px 30px;
 }
@@ -122,4 +129,8 @@ ol {
   .posts {
     grid-template-columns: 1fr;
   }
+}
+
+code {
+  overflow: scroll-y;
 }
