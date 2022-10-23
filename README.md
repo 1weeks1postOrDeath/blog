@@ -1,7 +1,13 @@
+# 링크
+
+- [oneweeks-onepost-or-death](https://oneweeks-onepost-or-death.vercel.app/)
+
 # 사용방법
 
-아래의 형태를 맞춰 `posts` 폴더에 글을 작성해주시면 됩니다.
-`pre-posts`는 작성중인 글의 저장용도로 임의로 지정해놓았습니다.
+1. 본인 이름의 브랜치를 dev 브랜치 기점으로 따서 글을 작성해주시면 됩니다.
+2. 아래의 형태를 맞춰 `posts` 폴더에 글을 작성해주시면 됩니다.
+
+- `pre-posts`는 작성중인 글의 저장용도로 임의로 지정해놓았습니다.
 
 ```markdown
 ---

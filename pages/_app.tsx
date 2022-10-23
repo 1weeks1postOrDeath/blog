@@ -1,3 +1,4 @@
+import 'highlight.js/styles/github.css';
 import type { AppProps } from 'next/app';
 import React from 'react';
 import Header from '../components/Header';

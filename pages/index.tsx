@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-css-tags */
 import fs from 'fs';
 import matter from 'gray-matter';
 import Head from 'next/head';
@@ -11,11 +12,14 @@ export default function Home({ posts }: { posts: IPost[] }) {
     <div>
       <Head>
         <title>Dev Blog</title>
+        <link
+          rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css"
+        />
       </Head>
-
       <div className="posts">
-        {posts.map((post: any, index: number) => (
-          <Post key={index} post={post} />
+        {posts.map((post: IPost, index: number) => (
+          <Post key={index + post.slug} post={post} />
         ))}
       </div>
     </div>
@@ -43,7 +47,7 @@ export async function getStaticProps() {
       slug,
       frontmatter,
     };
-  });
+  }) as IPost[];
 
   return {
     props: {
