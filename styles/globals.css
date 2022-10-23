@@ -44,7 +44,8 @@ header a {
 .container {
   max-width: 768px;
   margin: auto;
-  overflow: auto;
+  margin-bottom: 24px;
+  /* overflow: auto; */
   padding: 0 10px;
 }
 

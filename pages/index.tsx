@@ -18,8 +18,8 @@ export default function Home({ posts }: { posts: IPost[] }) {
         />
       </Head>
       <div className="posts">
-        {posts.map((post: any, index: number) => (
-          <Post key={index} post={post} />
+        {posts.map((post: IPost, index: number) => (
+          <Post key={index + post.slug} post={post} />
         ))}
       </div>
     </div>
@@ -47,7 +47,7 @@ export async function getStaticProps() {
       slug,
       frontmatter,
     };
-  });
+  }) as IPost[];
 
   return {
     props: {
