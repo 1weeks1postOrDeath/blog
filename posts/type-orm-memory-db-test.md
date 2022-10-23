@@ -1,13 +1,13 @@
 ---
 title: 'TypeORM에서 메모리DB(pg-mem) 사용해서 테스트 코드 만들기'
 date: 'March 23, 2022'
-excerpt: ''
-cover_image: ''
+excerpt: 'TypeORM에서 메모리 DB 사용해서 테스트 하는 방법을 정리한다.'
+cover_image: 'https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg'
 ---
 
 repository를 테스트 할 때 mock을 사용하면 정확한 테스트가 어렵고 그렇다고 실제 DB를 사용하자니 설정이라든가 롤백작업을 해주어야 한다.
-그래서 메모리DB를 사용해서 테스트를 하는 경우가 있는 데 TypeORM에서 메모리 DB 사용해서 테스트 하는 방법을 정리한다.
 
+그래서 메모리DB를 사용해서 테스트를 하는 경우가 있는 데 TypeORM에서 메모리 DB 사용해서 테스트 하는 방법을 정리한다.
 
 ### pg-mem 설치
 
@@ -30,8 +30,8 @@ db를 실행하면 current_database 함수가 실행이 되는 데 해당 함수
 
 ```ts
 db.public.registerFunction({
-    name: 'current_database',
-    implementation: () => 'test',
+  name: 'current_database',
+  implementation: () => 'test',
 });
 ```
 
@@ -42,12 +42,12 @@ registerExtension 함수로 필요한 확장 프로그램을 설치할 수 있�
 
 ```ts
 db.registerExtension('uuid-ossp', (schema) => {
-    schema.registerFunction({
-        name: 'uuid_generate_v4',
-        returns: DataType.uuid,
-        implementation: v4,
-        impure: true,
-    });
+  schema.registerFunction({
+    name: 'uuid_generate_v4',
+    returns: DataType.uuid,
+    implementation: v4,
+    impure: true,
+  });
 });
 ```
 
@@ -86,24 +86,23 @@ const connection: Connection = await db.adapters.createTypeormConnection({
 });
 
 let tempDonationRepository = connection.getRepository(Donation);
-    
+
 donationRepository = new DonationRepository(tempDonationRepository.target, tempDonationRepository.manager, tempDonationRepository.queryRunner);
 ```
-
 
 ### 테스트
 
 ```ts
 it('getDonation()', () => {
-    let donation = donationRepository.getDonation(1);
-    expect(donation).not.toBeNull();
-})
+  let donation = donationRepository.getDonation(1);
+  expect(donation).not.toBeNull();
+});
 
 afterAll(async () => {
-    let connection = getConnection();
+  let connection = getConnection();
 
-    if (connection) {
-        connection.close();
-    }
-})
+  if (connection) {
+    connection.close();
+  }
+});
 ```
