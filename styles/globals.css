@@ -123,14 +123,11 @@ ol {
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
+  overflow: scroll;
 }
 
 @media (max-width: 500px) {
   .posts {
     grid-template-columns: 1fr;
   }
-}
-
-code {
-  overflow: scroll-y;
 }
