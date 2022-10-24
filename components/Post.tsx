@@ -9,6 +9,7 @@ export default function Post({ post }: { post: IPost }) {
       </div>
       <div className="post-date">Posted on {post.frontmatter.date}</div>
       <h3>{post.frontmatter.title}</h3>
+      <span className="post-author">Posted by {post.frontmatter.author}</span>
       <p>{post.frontmatter.excerpt}</p>
       <Link href={`/blog/${post.slug}`}>
         <a className="btn">Read More</a>

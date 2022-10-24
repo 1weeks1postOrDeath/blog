@@ -7,7 +7,7 @@ import { IFrontMatter } from '../../types';
 import { marked } from '../../utils/libs/marked';
 
 export default function PostPage({
-  frontmatter: { title, date, cover_image },
+  frontmatter: { title, date, cover_image, author },
   slug,
   content,
 }: {
@@ -23,6 +23,7 @@ export default function PostPage({
       <div className="card card-page">
         <h1 className="post-title">{title}</h1>
         <div className="post-date">Posted on {date}</div>
+        <div className="post-author">Post by {author}</div>
         <img src={cover_image} alt="cover" />
         <div className="post-body">
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
