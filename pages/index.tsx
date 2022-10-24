@@ -16,6 +16,11 @@ export default function Home({ posts }: { posts: IPost[] }) {
           rel="stylesheet"
           href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css"
         />
+        <script
+          id="dsq-count-scr"
+          src="//https-oneweeks-onepost-or-death-vercel-app.disqus.com/count.js"
+          async
+        ></script>
       </Head>
       <div className="posts">
         {posts.map((post: IPost, index: number) => (
