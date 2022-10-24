@@ -1,6 +1,7 @@
 ---
 title: 'TypeORM에서 메모리DB(pg-mem) 사용해서 테스트 코드 만들기'
 date: 'March 23, 2022'
+author: '김형진'
 excerpt: 'TypeORM에서 메모리 DB 사용해서 테스트 하는 방법을 정리한다.'
 cover_image: 'https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg'
 ---

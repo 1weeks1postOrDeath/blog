@@ -1,6 +1,7 @@
 ---
 title: 'Next.js로 마크다운 블로그를 만들어보자'
-date: 'October 23, 2021'
+date: 'October 23, 2022'
+author: '이상훈'
 excerpt: 'Next.js와 몇가지라이브러리를 통해 간단하게 블로그를 만들어보자'
 cover_image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png'
 ---
