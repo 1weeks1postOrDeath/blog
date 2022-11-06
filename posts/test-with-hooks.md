@@ -95,6 +95,7 @@ const useGetDataFromId = ({ registrationId }: { registrationId: string }) => {
       setIsError(true);
       return;
     }
+    //IIFE를 통해 굳이 함수의 롤을 하나로 진행하였다.
     (async () => {
       const data = await getDataFromId(registrationId);
       if (!data) {
