@@ -1,8 +1,8 @@
 ---
-title: '데코레이터'
-date: 'March 30, 2022'
+title: 'TypeScript에서 데코레이터 사용하기'
+date: 'October 30, 2022'
 author: '김형진'
-excerpt: '데코레이터'
+excerpt: 'TypeScript에서 데코레이터 사용하기'
 cover_image: 'https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg'
 ---
 
