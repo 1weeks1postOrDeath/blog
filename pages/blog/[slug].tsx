@@ -3,11 +3,13 @@ import matter from 'gray-matter';
 // import { marked } from 'marked';
 import Link from 'next/link';
 import path from 'path';
+import React from 'react';
+import DisqusComments from '../../components/DisqusComments';
 import { IFrontMatter } from '../../types';
 import { marked } from '../../utils/libs/marked';
 
 export default function PostPage({
-  frontmatter: { title, date, cover_image, author },
+  frontmatter,
   slug,
   content,
 }: {
@@ -15,6 +17,7 @@ export default function PostPage({
   slug: string;
   content: string;
 }) {
+  const { title, date, cover_image, author } = frontmatter;
   return (
     <>
       <Link href="/">
@@ -29,6 +32,7 @@ export default function PostPage({
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>
+      <DisqusComments frontmatter={frontmatter} slug={slug} />
     </>
   );
 }
