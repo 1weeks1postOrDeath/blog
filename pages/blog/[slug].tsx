@@ -9,7 +9,11 @@ import { IFrontMatter } from '../../types';
 import { marked } from '../../utils/libs/marked';
 
 export default function PostPage({
+<<<<<<< HEAD
   frontmatter,
+=======
+  frontmatter: { title, date, cover_image, author },
+>>>>>>> e74bcb369cfb6f57eee1da16e6f9a41dd12fe878
   slug,
   content,
 }: {
