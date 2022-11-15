@@ -1,6 +1,6 @@
 ---
 title: 'Lighthouse를 활용한 프론트엔드 최적화'
-date: 'November 07, 2022'
+date: 'November 15, 2022'
 author: '이상훈'
 excerpt: 'Lighthouse를 활용한 프론트엔드 최적화를 진행해보자'
 cover_image: 'https://lh3.googleusercontent.com/JsGtt7BHEbHhQl5OzJikROL49WGoN0fBNcU_mvLRjWqx7nm7r7rzdG0DpET4qcK1FhNkFpcKf600G-Eoxx-_q3D4iA=w128-h128-e365-rj-sc0x00ffffff'
