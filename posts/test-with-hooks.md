@@ -1,8 +1,8 @@
 ---
-title: 'Next.js로 마크다운 블로그를 만들어보자'
+title: '리액트 Hooks를 테스트해보자'
 date: 'November 07, 2022'
 author: '이상훈'
-excerpt: 'Next.js와 몇가지라이브러리를 통해 간단하게 블로그를 만들어보자'
+excerpt: 'API모킹과 함께하는 Hooks 테스트'
 cover_image: 'https://raw.githubusercontent.com/testing-library/react-hooks-testing-library/main/public/ram.png'
 ---
 
