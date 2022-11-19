@@ -3,7 +3,7 @@ title: 'TypeScript satisfies'
 date: 'November 20, 2022'
 author: '김형진'
 excerpt: 'TypeScript 4.9 satisfies 문법'
-cover_image: './asserts/typescript/ts4_9.png'
+cover_image: '/images/posts/typescript/ts4_9.png'
 ---
 
 # satisfies 연산자
@@ -31,9 +31,9 @@ const greenNormalized = palette.green.toUpperCase();
 
 ## 개선된 버전
 
-* Colors라는 type을 만들어서 들어갈 수 있는 값을 지정한다.
-* RGB라는 number값 3개를 가지는 배열을 선언
-* scabiesPalette값은 Colors의 키값과 문자열 혹은 RGB타입의 값이 들어온다.
+- Colors라는 type을 만들어서 들어갈 수 있는 값을 지정한다.
+- RGB라는 number값 3개를 가지는 배열을 선언
+- scabiesPalette값은 Colors의 키값과 문자열 혹은 RGB타입의 값이 들어온다.
 
 ```ts
 type Colors = "red" | "green" | "blue";
@@ -94,5 +94,5 @@ const object3 = {
 
 # 참조
 
-* https://devblogs.microsoft.com/typescript/announcing-typescript-4-9
-* https://github.com/microsoft/TypeScript/issues/47920
+- https://devblogs.microsoft.com/typescript/announcing-typescript-4-9
+- https://github.com/microsoft/TypeScript/issues/47920
